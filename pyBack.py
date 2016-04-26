@@ -2,10 +2,6 @@
 
 import sys
 
-def printBlock(name, phone):
-	block = "<contact><name>" + name + "</name><phone>" + phone + "</phone><folder>telefon</folder></contact>"
-	return block
-
 if len(sys.argv) != 3:
 	print "No file to load or no output file. Ending."
 	sys.exit()
@@ -20,7 +16,6 @@ file.close()
 
 name = ""
 phone = ""
-
 vcard = ""
 
 i=1
